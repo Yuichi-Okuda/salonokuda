@@ -1,0 +1,100 @@
+#access{
+    // height: 760px;
+    background-color: $hadairo;
+    padding-bottom: 55px;
+}
+
+.access-box{
+    padding-top: 280px;
+    // margin-bottom: 55px;
+    width: 100%;
+    @include access{
+        padding-top: 80px;
+    }
+}
+
+.access-logo{
+    font-size: 1.8rem;
+    color: $gray;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    &:after{
+        display: inline-block;
+        content:"";
+        width: 100px;
+        height: 1.5px;
+        background-color: $gray;
+        margin: 0 0 5px 10px;
+    }
+    span{
+        padding-left: 5px;
+    }
+}
+
+.access-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include access{
+        padding-top: 80px;
+        // flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
+
+.access-info{
+    width: 40%;
+    background-color: #D0C5BA;
+    font-size: 1.6rem;
+    color: $white;
+    // position: relative;
+    @include access{
+        width: 100%;
+    }
+}
+
+.info-wrap{
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+
+    // padding-top: 60px;
+    // width: 300px;
+    // margin: 0 auto;
+
+    padding: 50px;
+    
+    p{
+        padding-top: 30px;
+        &:first-child{
+            padding-top: 0;
+        }
+    }
+}
+
+.branch{
+    color: #00000038;
+    font-size: 2.4rem;
+}
+
+.access-map{
+    width: 60%;
+    @include access{
+        width: 100%;
+    }
+}
+
+.ggmap{
+    position: relative;
+    width: 100%;
+    padding-top: 66%;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+

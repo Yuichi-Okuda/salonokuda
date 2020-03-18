@@ -1,0 +1,107 @@
+#concept{
+    height: 900px;
+    // background-color: pink;
+    // position: absolute;
+    // z-index: 1;
+    @include pc{
+        background: linear-gradient(180deg, $hadairo 0%, $hadairo 40%, #A1938689 40%, #A1938689 100%);
+    }
+    @include tab{
+        background: linear-gradient(180deg, $hadairo 0%, $hadairo 40%, #A1938689 40%, #A1938689 100%);
+    }
+    @include sp{
+        background: linear-gradient(180deg, $hadairo 0%, $hadairo 25%, #A1938689 25%, #A1938689 100%);
+    }
+    
+}
+
+.concept{
+    height: 100%;
+    @include pc{
+        padding-top: 250px;
+    }
+    @include tab{
+        padding-top: 250px;
+    }
+    @include sp{
+        padding-top: 100px;
+    }
+    &-logo{
+        color: $gray;
+        font-size: 1.8rem;
+        // width: 10%;
+        // display: flex;
+        // justify-content: space-between;
+        span{
+            padding-left: 5px;
+        }
+        &:after{
+            display: inline-block;
+            content:"";
+            width: 100px;
+            height: 1.5px;
+            background-color: $gray;
+            margin: 0 0 5px 10px;
+        }
+    }
+    &-img{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include sp{
+            padding-top: 80px;
+        }
+        &_left{
+            height: 413px;
+            width: 65%;
+            // overflow: hidden;
+            background-image: url(../img/img2.png);
+            background-size: cover;
+            background-position: 60% 100%;
+            @include tab{
+                width: 47%;
+                height: 205px;
+            }
+        }
+        &_right{
+            height: 413px;
+            width: 30%;
+            // overflow: hidden;
+            background-image: url(../img/img3.png);
+            background-size: cover;
+            background-position: 50% 50%;
+            @include tab{
+                width: 47%;
+                height: 205px;
+            }
+        }
+    }
+    &_desk{
+        padding-top: 50px;
+        display: flex;
+        height: 400px;
+        justify-content: space-evenly;
+        @include tab{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &1{
+            font-family: Hiragino Mincho Pro;
+            color: $white;
+            font-size: 4rem;
+            padding-top: 20px;
+            
+        }
+        &2{
+            font-family: Hiragino Kaku Gothic Pro;
+            color: $white;
+            font-size: 1.6rem;
+            line-height: 1.6;
+        }
+    }
+    
+    
+}
+

@@ -1,0 +1,124 @@
+
+.footer-a{
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include sp{
+        display: none;
+    }
+}
+
+.footer-a_1{
+    height: 44.5%;
+}
+
+.footer-a_2{
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(238, 236, 236);
+
+}
+
+.footer-a_3{
+    height: 44.5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer-a_logo{
+    color: #7070704D;
+    font-size: 3.2rem;
+    span{
+        color: $black;
+        padding-left: 10px;
+    }
+}
+
+.a_reserve{
+    color: $gray;
+    font-size: 1.8rem;
+    height: 38px;
+    padding: 9px 40px;
+    border: solid 1px;
+    box-shadow: 0 5px 2px;
+    transition: all 0.1s 0s ease-in;
+        &:active{
+        // padding-top: 5px;
+        // transition: all 0.1s 0s ease-in;
+        margin-top: 5px;
+        box-shadow: none;
+    }
+}
+
+.footer-b{
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_1{
+        height: 20%;
+    }
+    &_2{
+        height: 1px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgb(238, 236, 236);
+    }
+    &_3{
+        height: 20%;
+    }
+    &_4{
+        height: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &_logo{
+         color: #7070704D;
+        font-size: 3.2rem;
+        span{
+            color: $black;
+            padding-left: 10px;
+        }
+    }
+}
+
+.b_reserve{
+    color: $gray;
+    font-size: 1.8rem;
+    height: 38px;
+    padding: 9px 40px;
+    border: solid 1px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 2px;
+    transition: all 0.1s 0s ease-in;
+    &:active{
+        // padding-top: 5px;
+        // transition: all 0.1s 0s ease-in;
+        margin-top: 5px;
+        box-shadow: none;
+    }
+}
+
+.footer-foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+    p{
+        font-size: 3.2rem;
+    }
+}
+
+
+
+@media screen and(min-width:601px){
+    .footer-b{
+        display: none;
+    }
+}

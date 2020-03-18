@@ -1,0 +1,131 @@
+header{
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    padding: 70px 50px 70px 80px;
+    align-items: center;
+    span{
+        padding-left: 20px;
+    }
+    @include pc{
+        position: absolute;
+    }
+    z-index: 1;
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+}
+
+.header-logo{
+    font-size: 3.8rem;
+}
+
+header ul{
+    display: flex;
+    @include tab {
+        display: none;
+    }
+    li{
+        font-size: 1.8rem;
+        padding-left: 21px;
+        color: $gray;
+        & :after{
+            display: block;
+            content: "";
+            width: 1px; //widthが0でもいい
+            height: 1px;
+            margin-top: 2px;
+            background-color: transparent;
+        }
+        // transition: all 1s 0.5s ease-in;
+        // &:first-child{
+        //     color: #000000;
+        //     & :after{
+        //         display: block;
+        //         content: "";
+        //         width: 4.4rem;
+        //         height: 0.1rem;
+        //         margin-top: 0.2rem;
+        //         background-color: #000000;
+        //     }
+        // }
+    }
+    ////////////////////////////////
+    ///// 下線伸びるアニメーション /////
+    ////////////////////////////////
+    li:first-child:hover{
+        // transition: all 1s 0.5s ease-in;
+        color: $black;
+        & :after{
+            transition: all 1s 0.5s ease-in;
+            display: block;
+            content: "";
+            width: 44px;
+            height: 1px;
+            margin-top: 2px;
+            background-color: $black;
+            // transition: all 1s 0.5s ease-in;
+        }
+    }
+    li:nth-child(2):hover{
+        // transition: all 1s 0.5s ease-in;  //transition書く位置いまいち
+        color: $black;
+        & :after{
+            transition: all 1s 0.5s ease-in;
+            display: block;
+            content: "";
+            width: 80px;
+            height: 1px;
+            margin-top: 2px;
+            background-color: $black;
+            // transition: all 1s 0.5s ease-in;
+        }
+    }
+    li:nth-child(3):hover{
+        color: $black;
+        & :after{
+            transition: all 1s 0.5s ease-in;
+            display: block;
+            content: "";
+            width: 70px;
+            height: 1px;
+            margin-top: 2px;
+            background-color: $black;
+            // transition: all 1s 0.5s ease-in;
+        }
+    }
+    li:nth-child(4):hover{
+        color: $black;
+        & :after{
+            transition: all 1s 0.5s ease-in;
+            display: block;
+            content: "";
+            width: 80px;
+            height: 1px;
+            margin-top: 2px;
+            background-color: $black;
+            // transition: all 1s 0.5s ease-in;
+        }
+    }
+}
+
+.ham{
+    display: none;
+    @include tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        span{
+            width: 30px;
+            height: 2px;
+            content: "";
+            background-color: #3B4043;
+            &:last-child{
+                width: 20px;
+            }
+        }
+    }
+}

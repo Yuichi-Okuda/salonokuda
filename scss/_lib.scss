@@ -1,0 +1,47 @@
+//レスポンシブ
+@mixin pc{
+    @media screen  and(min-width:960px){
+        @content;
+    }
+}
+@mixin tab{
+    @media screen  and(max-width:959px){
+        @content;
+    }
+}
+@mixin sp{
+    @media screen and(max-width:600px){
+        @content;
+    }
+}
+
+@mixin access{
+    @media screen and(max-width:800px){
+        @content
+    }
+};
+
+//変数
+$black: black;
+$hadairo: #A193861F;
+$gray: #707070;
+$white: #FFFFFF;
+
+
+
+
+//共通のスタイル
+html{
+    font-size: 62.5%; //10px
+}
+
+.m0auto{
+    width: 80%;
+    margin: 0 auto;
+}
+
+// .menu-img{
+//     height: 271px;
+//     width: 100%;
+// }
+//
